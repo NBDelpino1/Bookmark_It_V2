@@ -1,0 +1,29 @@
+{
+  "name": "reviewpost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NBDelpino1/reviewpost.git"
+  },
+  "author": "Nick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NBDelpino1/reviewpost/issues"
+  },
+  "homepage": "https://github.com/NBDelpino1/reviewpost#readme",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.0",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.8.5",
+    "path": "^0.12.7",
+    "request": "^2.80.0"
+  }
+}

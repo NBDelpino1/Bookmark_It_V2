@@ -1,0 +1,45 @@
+<!-- Purpose of file: this is what will render inside the body (Main.handlebars) when the user is viewing the homepage -->
+
+<div id="landing-jumbotron-wrapper" class="jumbotron text-center">
+    <div id="jumbotron-content">
+        <div id="logo-wrapper">
+            <img src="../../assets/images/logo.svg" alt="">
+            <h1 class="logo-text">Bookmark It</h1>
+        </div>
+
+        <div id="cta-buttons-wrapper">
+            <a class="btn btn-new-articles scrape-new landing-button" href="#" role="button">New Articles</a>
+            <a class="btn btn-saved-articles landing-button" href="/saved" role="button">Saved Articles</a>
+        </div>
+    </div>
+</div>
+
+<div class="container date-wrapper">
+   <span class="date-wrapper-span">
+        <i class="fas fa-signal fa-lg date-text"></i>
+    <h5 id="spanDate" class="grey-text date-text"></h5>
+   </span>
+</div>
+
+<div class=" container article-container">
+    <!-- Content will populate here -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content alert-saved-modal">
+            <div class="modal-body text-center">
+                <img src="../../assets/images/bookmark-confirmation-icon.png" class="modal-image">
+                <h1 class="text-center modal-text">Bookmarked</h1>
+            </div>
+        </div>
+  </div>
+</div>
+
+<!-- JavaScript file that dynamically populates everything that is in the saved in the headlines section of the database -->
+
+<script src="../../assets/js/index.js"></script>
+
+
+

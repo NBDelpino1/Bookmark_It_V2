@@ -1,0 +1,39 @@
+<!-- Purpose of file: this is what will render inside the body (Main.handlebars) when the user is viewing the saved notes page -->
+
+<div id="saved-section-jumbotron-wrapper" class="jumbotron text-center">
+    <!--<img class="fa-undo" src="../public/go-back-icon.png" alt="">-->
+    <div id="jumbotron-content">
+        <div id="logo-wrapper">
+            <h1 class="logo-text">Create / Edit Bookmarked Itemz</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container date-wrapper">
+   <span class="date-wrapper-span">
+        <i class="fas fa-signal fa-lg date-text"></i>
+    <h5 id="spanDate" class="grey-text date-text"></h5>
+   </span>
+    <a class="btn btn-save-an-article save article-button go-back-button" href="/">
+        <i class="fas fa-undo fa-lg"></i>
+    </a>
+</div>
+
+<div class="container article-container saved-articles-container">
+    <!-- Content will populate here -->
+</div>
+
+<nav class="navbar  navbar-fixed-bottom">
+    <div class="container">
+        <!--<a class="btn btn-save-an-article save article-button blue-button" data-toggle="modal" data-target="#exampleModalCenter">-->
+            <!--<img src="../public/home-icon.png">-->
+        <!--</a>-->
+        <a role="button" href="/" class="btn footer-button">
+            <i class="fas fa-home fa-2x grey-icon"></i>
+        </a>
+    </div>
+</nav>
+
+<!-- JavaScript file that dynamically populates everything that is in the saved articles section of the database -->
+
+<script src="../../assets/js/saved.js"></script>
