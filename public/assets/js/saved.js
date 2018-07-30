@@ -78,52 +78,30 @@ $(document).ready(function() {
 
         var panel =
             $([
-                '<div class="article-holder">',
-                '<div class="article-content">',
-                '<h3 class="article-headline">',
-                article.headline,
-                '</h3>',
-                '<p class="article-summary">', article.summary,'</p>',
-                '<br>',
+                '<div class="card mb-3 shadow article-holder">',
+                '<div class="card-body article-content">',
+                '<i class="fas fa-bookmark fa-lg float-right pt-1 mr-2 grey-icon"></i>',
+                '<h5 class="card-title article-headline">',article.headline,'</h5>',
+                '<p class="card-text article-summary">',article.summary,'</p>',
+                '<div class="date-div text-center float-left">',
+                '<div class="border"></div>',
+                '<p class="content-date">',months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear(),'</p>',
                 '</div>',
+                '<div class="float-right">',
+                '<a href="#" class="btn btn-primary shadow icon-button btn-see-article-note notes"><i class="fas fa-search"></i></a>',
+                '<a href="#" class="btn btn-primary shadow icon-button btn-delete-article delete red-button"><i class="fas fa-trash-alt"></i></a>',
                 '<div>',
-                '<div class="article-button-wrapper text-center">',
-                '<div class="left-note-button-wrapper">',
-
-
-
-
-
-                '<a class="btn btn-see-article-note notes article-button blue-button">',
-                // 'Add Note',
-                '<img src="../../pencil-icon.png">',
-                '</a>',
-
-
-
-
-                '<p class="article-icon-text">Create / Edit Note</p>',
                 '</div>',
-                '<div class="right-note-button-wrapper">',
-                '<a class="btn btn-delete-article delete red-button">',
-                // 'Delete Note',
-                '<img src="../../trash-icon.png">',
-                '</a>',
-                '<p class="article-icon-text">Delete Note</p>',
-                '</div>',
-                '</div>',
-                '</div>',
-                '</div>',
-                // '<div class="container article-holder">',
-                // '<h3 class="article-headline">',
-                // article.headline,
-                // '</h3>',
-                // '<p>', article.summary,'</p>',
-                // '<br>',
-                // '<a class="btn btn-delete-article delete">Delete Article</a>',
-                // '<a class="btn btn-see-article-note notes">Add / View Note</a>',
+                '</div>'
+                // '<div class="card mb-3 shadow article-holder">',
+                // '<div class="card-body article-content">',
+                // '<i class="fas fa-bookmark fa-lg float-right pt-1 mr-2 grey-icon"></i>',
+                // '<h5 class="card-title article-headline">',article.headline,'</h5>',
+                // '<p class="card-text article-summary">',article.summary,'</p>',
+                // '<a href="#" class="btn btn-primary shadow icon-button btn-see-article-note notes"><i class="fas fa-search"></i></a>',
+                // '<a href="#" class="btn btn-primary shadow icon-button btn-delete-article delete"><i class="fas fa-trash-alt"></i></a>',
                 // '</div>',
-                // '<hr>'
+                // '</div>'
             ].join(""));
 
         panel.data('_id', article._id);
@@ -142,10 +120,11 @@ $(document).ready(function() {
 //MODAL MAYBE????
         var emptyAlert =
             $([
-                '<div class="no-note-msg-holder text-center">',
-                '<i class="far fa-smile-wink fa-4x grey-text"></i>',
-                '<h2 class="no-note-msg grey-text">You dont have anything saved at the moment.</h2>',
-                '<h2 class="grey-text">Go save some stuff!</h2>',
+                '<div class="card mb-3 pt-4 pb-4 shadow text-center article-holder">',
+                '<div class="card-body article-content">',
+                '<i class="far fa-smile-wink fa-3x mb-3"></i>',
+                '<p class="card-text lead">You dont have anything bookmarked yet</p>',
+                '</div>',
                 '</div>'
             ].join(""));
         articleContainer.append(emptyAlert);
@@ -191,14 +170,18 @@ $(document).ready(function() {
         $.get('/api/notes/' + currentArticle._id).then(function(data) {
 
             var modalText = [
-                '<div class="container-fluid text-center">',
-                // '<h4>Notes For Article: ',
-                // currentArticle._id,
-                // '</h4>',
-                '<ul class="list-group note-container">',
-                '</ul>',
-                '<textarea placeholder="Start typing your note here..." rows="6"></textarea>',
-                '<button class="btn btn-save-a-note save blue-button">Save</button>',
+                // '<ul class="list-group list-group-flush note-container pt-3 m-3">',
+                // '</ul>',
+                '<div class=" note-container mb-3">',
+                '</div>',
+                '<div class="shadow p-3">',
+                '<div class="form-group">',
+                '<label for="exampleFormControlTextarea1"><i class="fas fa-pen fa-lg ml-3 grey-icon"></i></label>',
+                '<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type you note here"></textarea>',
+                '</div>',
+                '<div class="form-group">',
+                '<button type="button" class="btn btn-primary btn-save-a-note save shadow m-0 icon-button"><i class="fas fa-plus"></i></button>',
+                '</div>',
                 '</div>'
             ].join("");
 
@@ -236,30 +219,20 @@ $(document).ready(function() {
         if(!data.notes.length){
 
             currentNote = [
-                '<div class="text-center">',
-                '<div class="article-icons-wrapper-content text-center">',
-                '<img src="../../not-saved-icon.png">',
-                '<p class="article-icon-text">Nothing Saved Yet</p>',
-                '</div>',
-                '</div>'
-                // '<li class="list-group-item">',
-                // 'No notes yet :-)',
-                // '</li>'
+                // '<i class="fas fa-pen fa-lg"></i>',
             ].join("");
             notesToRender.push(currentNote);
 
         } else {
             for(var i=0; i < data.notes.length; i ++) {
                 currentNote = $([
-                    '<li class="list-group-item text-left">',
+                    '<div class="p-3 shadow">',
+                    // '<li class="list-group-item mt-3 shadow">',
                     '<p>', data.notes[i].noteText, '</p>',
-                    '<br>',
-                    '<a class="btn note-delete btn-delete-article-note" role="button">',
-                    // 'Delete Note',
-                    '<img src="../../trash-icon.png">',
-                    '</a>',
+                    '<a class="btn btn-primary note-delete btn-delete-article-note m-0 icon-button red-button" role="button"><i class="fas fa-trash-alt"></i></a>',
                     // '<button class="btn note-delete btn-delete-article-note btn-lg"><i class="glyphicon glyphicon-minus"></i></button>',
-                    '</li>',
+                    // '</li>',
+                   ' </div>'
                 ].join(""));
 
                 currentNote.children('a').data('_id', data.notes[i]._id);

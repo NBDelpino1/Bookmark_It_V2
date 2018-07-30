@@ -4,10 +4,11 @@ $(document).ready(function() {
 
     // get today's date and display it on the page
 
-    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     var today = new Date();
     today.setTime(today.getTime());
     document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
+
 
     // create div that will hold all of the articles
 
@@ -79,37 +80,25 @@ $(document).ready(function() {
 
 
         var panel =
-            $([ '<div class="article-holder">',
-                '<div class="article-content">',
-                '<h3 class="article-headline">',
-                article.headline,
-                '</h3>',
-                '<p class="article-summary">', article.summary,'</p>',
+            $([
+                '<div class="card mb-3 shadow article-holder">',
+                '<div class="card-body article-content">',
+                '<h5 class="card-title article-headline">',article.headline,'</h5>',
+                '<p class="card-text article-summary">',article.summary,'</p>',
+                '<div class="date-div text-center float-right">',
+                '<div class="border"></div>',
+                '<p class="content-date">',months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear(),'</p>',
                 '</div>',
-                '<div>',
-                '<div class="article-button-wrapper text-center">',
-                '<a class="btn btn-save-an-article save article-button blue-button" data-toggle="modal" data-target="#exampleModalCenter">',
-                // 'Save Article',
-                '<img src="../../save-button-icon.png" class="button-image">',
-                '</a>',
-                '<p class="article-icon-text">Bookmark It!</p>',
+                '<a href="#" class="btn btn-primary shadow float-left icon-button btn-save-an-article save" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-bookmark"></i></a>',
                 '</div>',
-                '<div class="article-icons-wrapper">',
-                '<div class="article-icons-wrapper-content text-center">',
-                '<img src="../../not-saved-icon.png" class="article-holder-icon">',
-                '<p class="article-icon-text">Not Saved</p>',
-                '</div>',
-                '<div class="article-icons-wrapper-content text-center">',
-                '<img src="../../view-icon.png" class="article-holder-icon">',
-                '<p class="article-icon-text">View</p>',
-                '</div>',
-                '<div class="article-icons-wrapper-content text-center">',
-                '<img src="../../link-icon.png" class="article-holder-icon">',
-                '<p class="article-icon-text">Copy Link</p>',
-                '</div>',
-                '</div>',
-                '</div>',
-                '</div>',
+                '</div>'
+                // '<div class="card mb-3 shadow article-holder">',
+                // '<div class="card-body article-content">',
+                // '<h5 class="card-title article-headline">',article.headline,'</h5>',
+                // '<p class="card-text article-summary">',article.summary,'</p>',
+                // '<a href="#" class="btn btn-primary shadow icon-button btn-save-an-article save" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-bookmark"></i></a>',
+                // '</div>',
+                // '</div>'
             ].join(""));
 
         panel.data('_id', article._id);
@@ -127,7 +116,7 @@ $(document).ready(function() {
     function renderEmpty() {
 
         var emptyAlert =
-            $([ '<div class="alert alert-info text-center">',
+            $(['<div class="alert alert-info text-center">',
                 '<h4>Uh oh. Looks like we do not have any new articles.</h4>',
                 '</div>',
                 '<div class="panel panel-default">',
@@ -185,7 +174,7 @@ $(document).ready(function() {
             .then(function(data) {
 
                 initPage();
-                bootbox.alert('<h3 class="text-center m-top-80">' + data.message + '</h3>');
+                bootbox.alert('<h5 class="text-center m-5">' + data.message + '</h5>');
 
             });
 

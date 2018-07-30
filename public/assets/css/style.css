@@ -9,14 +9,14 @@ body {
 }
 
 #landing-jumbotron-wrapper {
-    background: url(../images/blue-2.png)no-repeat center center scroll;
+    background: url(../images/bg-3.png)no-repeat bottom center scroll;
     background-size: cover;
     height:500px;
     position: relative;
 }
 
 #saved-section-jumbotron-wrapper {
-    background: url(../images/blue-2.png)no-repeat center center scroll;
+    background: url(../images/bg-3.png)no-repeat center center scroll;
     background-size: cover;
     height:150px;
     position: relative;

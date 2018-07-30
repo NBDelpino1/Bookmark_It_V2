@@ -1,0 +1,116 @@
+/*TODO - FINAL ITERATION STILL IN PROGRESS, SOME CSS STYLES HAVEN'T BEEN REMOVED OR UPDATED TO A MORE SYMANTIC NAMING CONVENTION YET*/
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Slabo 27px', serif;*/
+    line-height: 1.5;
+    color: #333538;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+h5 {
+    font-family: 'Noto Sans', sans-serif;
+}
+#bottom-div{
+    background: url(../images/bg7.png)no-repeat bottom center scroll;
+    background-size: cover;
+}
+.slim-div {
+    margin:auto;
+    max-width:800px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+#banner {
+    position: relative;
+    border-radius: 2px;
+}
+
+#content {
+    border-radius: 2px;
+}
+#date-section {
+    border-radius: 2px;
+}
+.btn-primary {
+    border:none;
+    width:200px;
+    border-radius: 30px;
+    margin:5px;
+    font-weight:bold;
+}
+.card {
+    border-radius: 2px;
+    border-color: #fff;
+}
+.icon-button {
+    width:50px;
+    height:50px;
+    padding:12px;
+    border-radius: 50px;
+}
+.grey-icon {
+    color: #C4C9CD;
+}
+#fixedbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius:30px;
+    width:50px;
+    height:50px;
+    background-color: #736DD2;
+    border:none;
+    z-index: 99;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 2px 25px rgba(115, 109, 210, 0.5) !important;
+}
+#wrapper {
+    position: relative;
+}
+/*testing date div inside content*/
+.date-div {
+    width:100px;
+}
+.border {
+    margin:16px auto;
+    width:80%;
+    height:2px;
+    background-color: #007bff;
+    margin-bottom:16px;
+    border:none !important;
+}
+.content-date {
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:0;
+}
+.card-title {
+    display: inline-block;
+    width:80%;
+}
+.large-button {
+    background-color: #007bff;
+    font-size:12px;
+    font-family: 'Noto Sans', sans-serif;
+    padding:10px;
+    letter-spacing: 2px;
+}
+.nav-link, .navbar-brand {
+    font-size:12px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff !important;
+}
+.navbar {
+    background-color: #007bff;
+}
+.red-button {
+    background-color: #EA4335;
+}
+.navbar-light .navbar-toggler {
+    border:none;
+}
