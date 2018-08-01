@@ -81,7 +81,7 @@ $(document).ready(function() {
 
         var panel =
             $([
-                '<div class="card mb-3 shadow article-holder">',
+                '<div class="card mb-3  article-holder">',
                 '<div class="card-body article-content">',
                 '<h5 class="card-title article-headline">',article.headline,'</h5>',
                 '<p class="card-text article-summary">',article.summary,'</p>',

@@ -3,73 +3,44 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Slabo 27px', serif;*/
     line-height: 1.5;
-    color: #333538;
+    color: rgb(76, 76, 76);
 }
 h1 {
     font-family: 'Poppins', sans-serif;
+    color: #000;;
 }
 h5 {
-    font-family: 'Noto Sans', sans-serif;
+    font-weight:700;
 }
-#bottom-div{
-    background: url(../images/bg7.png)no-repeat bottom center scroll;
-    background-size: cover;
+.nav-link, .navbar-brand {
+    font-size:12px;
+    font-weight:700;
+    text-transform: uppercase;
+    color: #fff !important;
 }
-.slim-div {
-    margin:auto;
-    max-width:800px;
-    background-color: #fff;
-    border-radius: 2px;
+.navbar {
+    background-color: #007bff;
 }
-#banner {
-    position: relative;
-    border-radius: 2px;
-}
-
-#content {
-    border-radius: 2px;
-}
-#date-section {
-    border-radius: 2px;
-}
-.btn-primary {
+.navbar-light .navbar-toggler {
     border:none;
-    width:200px;
-    border-radius: 30px;
-    margin:5px;
-    font-weight:bold;
+}
+.row {
+    padding-top:120px !important;
+    padding-bottom:60px !important;
+}
+.banner{
+    background: url(../images/banner-bg.png)no-repeat bottom center scroll;
+    background-size: cover;
+    margin-bottom:50px;
 }
 .card {
-    border-radius: 2px;
-    border-color: #fff;
-}
-.icon-button {
-    width:50px;
-    height:50px;
-    padding:12px;
-    border-radius: 50px;
+    border:none;
+    border-radius:0;
+    border-bottom:1px dotted  #C4C9CD;
 }
 .grey-icon {
     color: #C4C9CD;
-}
-#fixedbutton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius:30px;
-    width:50px;
-    height:50px;
-    background-color: #736DD2;
-    border:none;
-    z-index: 99;
-    display: none;
-    cursor: pointer;
-    box-shadow: 0 2px 25px rgba(115, 109, 210, 0.5) !important;
-}
-#wrapper {
-    position: relative;
 }
 /*testing date div inside content*/
 .date-div {
@@ -87,30 +58,46 @@ h5 {
     font-size:11px;
     font-weight:bold;
     margin-bottom:0;
+    text-transform: uppercase;
 }
 .card-title {
     display: inline-block;
     width:80%;
 }
+.btn-primary {
+    border:none;
+    width:200px;
+    border-radius: 30px;
+    margin:5px;
+    font-weight:bold;
+}
 .large-button {
     background-color: #007bff;
     font-size:12px;
-    font-family: 'Noto Sans', sans-serif;
+    font-weight:700;
     padding:10px;
     letter-spacing: 2px;
-}
-.nav-link, .navbar-brand {
-    font-size:12px;
-    font-family: 'Noto Sans', sans-serif;
-    text-transform: uppercase;
-    color: #fff !important;
-}
-.navbar {
-    background-color: #007bff;
 }
 .red-button {
     background-color: #EA4335;
 }
-.navbar-light .navbar-toggler {
+.icon-button {
+    width:50px;
+    height:50px;
+    padding:12px;
+    border-radius: 50px;
+}
+#fixedbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius:30px;
+    width:50px;
+    height:50px;
+    background-color: #007bff;
     border:none;
+    z-index: 99;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 2px 25px rgba(0, 123, 255, 0.5) !important;
 }

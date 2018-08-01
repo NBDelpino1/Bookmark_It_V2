@@ -1,0 +1,21 @@
+
+<svg width="34px" height="50px" viewBox="0 0 34 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13">
+            <g id="Group-14">
+                <g id="Group-12">
+                    <path d="M0,32.6102662 C0,23.1605271 7.61115925,15.5 17,15.5 L17,32.6102662 L0,32.6102662 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <path d="M0,49.6102662 C0,40.1605271 7.61115925,32.5 17,32.5 L17,49.6102662 L0,49.6102662 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(8.500000, 41.055133) scale(1, -1) translate(-8.500000, -41.055133) "></path>
+                    <path d="M17,32.6102662 C17,23.1605271 24.6111593,15.5 34,15.5 L34,32.6102662 L17,32.6102662 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(25.500000, 24.055133) scale(-1, 1) translate(-25.500000, -24.055133) "></path>
+                    <path d="M19.2402344,37.5516724 C19.2402344,28.1019333 26.8513936,20.4414063 36.2402344,20.4414063 L36.2402344,37.5516724 L19.2402344,37.5516724 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(27.740234, 28.996539) scale(-1, 1) rotate(-30.000000) translate(-27.740234, -28.996539) "></path>
+                    <path d="M17,49.6102662 C17,40.1605271 24.6111593,32.5 34,32.5 L34,49.6102662 L17,49.6102662 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(25.500000, 41.055133) scale(-1, -1) translate(-25.500000, -41.055133) "></path>
+                    <path d="M4.25,0 L4.25,0 C6.59721019,-4.31175516e-16 8.5,1.90278981 8.5,4.25 L8.5,32.8897338 L0,32.8897338 L0,4.25 C-2.87450344e-16,1.90278981 1.90278981,4.31175516e-16 4.25,0 Z" id="Rectangle-5" fill="#FFFFFF"></path>
+                    <ellipse id="Oval-3" fill="#007BFF" cx="17.0651667" cy="33.1207224" rx="8.56516667" ry="8.62072243"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
