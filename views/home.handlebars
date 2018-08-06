@@ -1,7 +1,8 @@
 <!-- Purpose of file: this is what will render inside the body (Main.handlebars) when the user is viewing the homepage -->
 <div class="container shadow p-0 content-wrapper">
+    <!--</div>-->
     <div class="banner">
-        <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="/">
                 <img src="../../assets/images/logo-sm.svg" class="d-inline-block align-top" alt="Responsive Logo">
             </a>
@@ -26,13 +27,13 @@
             </div>
         </nav>
        <div class="container">
-           <div class="row pt-5 pb-5">
+           <div class="row pb-5">
                <div class="col-sm-6 text-center">
-                   <img src="../../assets/images/logo-lg.svg" height="150px" class="img-fluid" alt="Responsive Logo">
-                   <h1 class="mb-5 display-4">Bookmark</h1>
+                   <img src="../../assets/images/logo-lg.svg" height="150px" class="img-fluid d-sm-none" alt="Responsive Logo">
+                   <h1 class="mt-3 mb-5 display-4 d-sm-none logo-text-lead">Bookmark</h1>
                </div>
                <div class="col-sm-6 text-center">
-                   <h2 class="mb-5">Get the latest news articles, save, edit and delete as you choose.</h2>
+                   <h2 class="mb-5 logo-text-follow">Get the latest news articles, save, edit and delete as you choose.</h2>
                    <a class="btn btn-primary large-button shadow btn-new-articles scrape-new" href="#" role="button">GET ARTICLES</a>
                    <a class="btn btn-primary large-button shadow btn-saved-articles" href="/saved" role="button">SAVED BOOKMARKS</a>
                </div>
@@ -45,16 +46,19 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content alert-saved-modal">
-            <div class="modal-body text-center">
-                <img src="../../assets/images/bookmark-confirmation-icon.png" class="modal-image">
-                <h4 class="text-center modal-text">Bookmarked</h4>
+        <div class="modal-content shadow alert-saved-modal">
+            <div class="modal-body text-center bookmarked-alert-modal-content">
+                <!--<img src="../../assets/images/bookmark-confirmed.png" class="modal-image">-->
+                <img src="../../assets/images/bookmarked-confirm.svg" class="modal-image bounce">
+                <h4 class="text-center modal-text mt-4">Bookmarked!</h4>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <a class="btn btn-primary modal-large-button shadow btn-saved-articles" href="/saved" role="button">SAVED BOOKMARKS</a>
+                <button type="button" class="btn btn-primary modal-large-button shadow" data-dismiss="modal">CLOSE</button>
             </div>
         </div>
     </div>
 </div>
-
-
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

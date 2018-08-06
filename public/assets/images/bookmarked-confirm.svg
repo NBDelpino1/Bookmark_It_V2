@@ -1,0 +1,25 @@
+
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-17.3%" y="-8.1%" width="125.4%" height="125.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="-6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.30712183 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="84.6334135%" y1="13.6177885%" x2="16.4002404%" y2="82.8185096%" id="linearGradient-2">
+            <stop stop-color="#B5EB45" offset="0%"></stop>
+            <stop stop-color="#7ED321" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checked-(2)" filter="url(#filter-1)" transform="translate(15.000000, 3.000000)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+            <path d="M65,0 C28.9545455,0 0,28.9545455 0,65 C0,101.045455 28.9545455,130 65,130 C101.045455,130 130,101.045455 130,65 C130,28.9545455 101.045455,0 65,0 Z M102.522727,44.6136364 L55.25,93.6590909 C54.6590909,94.25 54.0681818,94.5454545 53.1818182,94.5454545 C52.2954545,94.5454545 51.4090909,94.25 51.1136364,93.6590909 L28.0681818,68.8409091 L27.4772727,68.25 C26.8863636,67.6590909 26.5909091,66.7727273 26.5909091,66.1818182 C26.5909091,65.5909091 26.8863636,64.7045455 27.4772727,64.1136364 L31.6136364,59.9772727 C32.7954545,58.7954545 34.5681818,58.7954545 35.75,59.9772727 L36.0454545,60.2727273 L52.2954545,77.7045455 C52.8863636,78.2954545 53.7727273,78.2954545 54.3636364,77.7045455 L93.9545455,36.6363636 L94.25,36.6363636 C95.4318182,35.4545455 97.2045455,35.4545455 98.3863636,36.6363636 L102.522727,40.7727273 C103.704545,41.6590909 103.704545,43.4318182 102.522727,44.6136364 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

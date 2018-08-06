@@ -1,0 +1,18 @@
+
+<svg width="41px" height="60px" viewBox="0 0 41 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-14">
+            <g id="Group-12">
+                <path d="M0,39.1323194 C0,27.7926325 9.17816263,18.6 20.5,18.6 L20.5,39.1323194 L0,39.1323194 Z" id="Combined-Shape" fill="#007BFF"></path>
+                <path d="M0,59.5323194 C0,48.1926325 9.17816263,39 20.5,39 L20.5,59.5323194 L0,59.5323194 Z" id="Combined-Shape" fill="#007BFF" transform="translate(10.250000, 49.266160) scale(1, -1) translate(-10.250000, -49.266160) "></path>
+                <path d="M20.5,39.1323194 C20.5,27.7926325 29.6781626,18.6 41,18.6 L41,39.1323194 L20.5,39.1323194 Z" id="Combined-Shape" fill="#007BFF" transform="translate(30.750000, 28.866160) scale(-1, 1) translate(-30.750000, -28.866160) "></path>
+                <path d="M20.5,59.5323194 C20.5,48.1926325 29.6781626,39 41,39 L41,59.5323194 L20.5,59.5323194 Z" id="Combined-Shape" fill="#007BFF" transform="translate(30.750000, 49.266160) scale(-1, -1) translate(-30.750000, -49.266160) "></path>
+                <path d="M5.125,0 L5.125,0 C7.95545934,-5.19946946e-16 10.25,2.29454066 10.25,5.125 L10.25,39.4676806 L0,39.4676806 L0,5.125 C-3.46631297e-16,2.29454066 2.29454066,5.19946946e-16 5.125,0 Z" id="Rectangle-5" fill="#007BFF"></path>
+                <ellipse id="Oval-3" fill="#EEEFF3" cx="20.5785833" cy="39.7448669" rx="10.3285833" ry="10.3448669"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
