@@ -89,7 +89,7 @@ $(document).ready(function() {
                 '</div>',
                 '<div class="float-right">',
                 '<a href="#" class="btn btn-primary shadow icon-button btn-see-article-note notes"><i class="fas fa-search"></i></a>',
-                '<a href="#" class="btn btn-primary shadow icon-button btn-delete-article delete red-button"><i class="fas fa-trash-alt"></i></a>',
+                '<a href="#" class="btn btn-primary shadow icon-button btn-delete-article delete red-button" data-toggle="modal" data-target="#delete-confirmation"><i class="fas fa-trash-alt"></i></a>',
                 '<div>',
                 '</div>',
                 '</div>'
