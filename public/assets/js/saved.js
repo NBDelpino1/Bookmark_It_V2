@@ -88,8 +88,8 @@ $(document).ready(function() {
                 '<p class="content-date">',months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear(),'</p>',
                 '</div>',
                 '<div class="float-right">',
-                '<a href="#" class="btn btn-primary shadow icon-button btn-see-article-note notes"><i class="fas fa-search"></i></a>',
-                '<a href="#" class="btn btn-primary shadow icon-button btn-delete-article delete red-button" data-toggle="modal" data-target="#delete-confirmation"><i class="fas fa-trash-alt"></i></a>',
+                '<a href="#" class="btn btn-primary btn-iconized-blue btn-see-article-note notes"><i class="fas fa-search"></i></a>',
+                '<a href="#" class="btn btn-primary btn-iconized-red btn-delete-article delete red-button" data-toggle="modal" data-target="#delete-confirmation"><i class="fas fa-trash-alt"></i></a>',
                 '<div>',
                 '</div>',
                 '</div>'
@@ -180,7 +180,7 @@ $(document).ready(function() {
                 '<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type you note here"></textarea>',
                 '</div>',
                 '<div class="form-group">',
-                '<button type="button" class="btn btn-primary btn-save-a-note save shadow m-0 icon-button"><i class="fas fa-plus"></i></button>',
+                '<button type="button" class="btn btn-primary btn-save-a-note save m-0 btn-iconized-blue"><i class="fas fa-plus"></i></button>',
                 '</div>',
                 '</div>'
             ].join("");
@@ -229,7 +229,7 @@ $(document).ready(function() {
                     '<div class="p-3 shadow">',
                     // '<li class="list-group-item mt-3 shadow">',
                     '<p>', data.notes[i].noteText, '</p>',
-                    '<a class="btn btn-primary note-delete btn-delete-article-note m-0 icon-button red-button" role="button"><i class="fas fa-trash-alt"></i></a>',
+                    '<a class="btn btn-primary note-delete btn-delete-article-note m-0 btn-iconized-red red-button" role="button"><i class="fas fa-trash-alt"></i></a>',
                     // '<button class="btn note-delete btn-delete-article-note btn-lg"><i class="glyphicon glyphicon-minus"></i></button>',
                     // '</li>',
                    ' </div>'

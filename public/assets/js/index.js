@@ -90,7 +90,7 @@ $(document).ready(function() {
                 '<p class="content-date">',months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear(),'</p>',
                 '</div>',
                 '<div class="float-right">',
-                '<a href="#" class="btn btn-primary shadow float-right icon-button btn-save-an-article save" data-toggle="modal" data-target="#bookmark-confirmation"><i class="fas fa-bookmark"></i></a>',
+                '<a href="#" class="btn btn-primary float-right btn-iconized-blue btn-save-an-article save" data-toggle="modal" data-target="#bookmark-confirmation"><i class="fas fa-bookmark"></i></a>',
                 '<div>',
                 '</div>',
                 '</div>'
