@@ -7,40 +7,55 @@ body {
     line-height: 1.5;
     color: rgb(76, 76, 76);
 }
+
 h1 {
     font-family: 'Poppins', sans-serif;
     color: #000;;
 }
+
 h5 {
     font-weight:700;
 }
+
+.content-wrapper {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
 .nav-link, .navbar-brand {
     font-size:12px;
     font-weight:700;
     text-transform: uppercase;
 }
+
 .navbar {
     background-color: transparent;
     margin-bottom:90px;
 }
+
 .navbar-light .navbar-toggler {
     border:none;
 }
+
 .banner{
     background: url(../images/banner-bg5.png)no-repeat bottom center scroll;
     background-size: cover;
 }
+
 .card {
     border:none;
     border-radius:0;
     border-bottom:1px dotted  #C4C9CD;
 }
+
 .grey-icon {
     color: #C4C9CD;
 }
+
 .date-div {
     width:100px;
 }
+
 .border {
     margin:16px auto;
     width:80%;
@@ -49,12 +64,14 @@ h5 {
     margin-bottom:16px;
     border:none !important;
 }
+
 .content-date {
     font-size:11px;
     font-weight:bold;
     margin-bottom:0;
     text-transform: uppercase;
 }
+
 .card-title {
     display: inline-block;
     width:80%;
@@ -218,54 +235,7 @@ h5 {
     background-color: #007bff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*TESTING*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #fixedbutton {
     position: fixed;
@@ -296,11 +266,6 @@ h5 {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-
-
 .modal-large-button {
     background-color: #007bff;
     font-size:12px;
@@ -309,8 +274,6 @@ h5 {
     letter-spacing: 2px;
     border-radius: 2px;
 }
-
-
 
 .modal-content {
     position: relative;
@@ -326,11 +289,13 @@ h5 {
     border-radius: .3rem;
     outline: 0;
 }
+
 .bounce {
     -moz-animation: bounce 3s;
     -webkit-animation: bounce 3s;
     animation: bounce 3s;
 }
+
 @-moz-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         -moz-transform: translateY(0);
@@ -345,6 +310,7 @@ h5 {
         transform: translateY(-15px);
     }
 }
+
 @-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         -webkit-transform: translateY(0);
@@ -359,6 +325,7 @@ h5 {
         transform: translateY(-15px);
     }
 }
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         -moz-transform: translateY(0);
@@ -379,15 +346,14 @@ h5 {
         transform: translateY(-15px);
     }
 }
+
 .modal-text {
     font-weight:700;
     color: #000;;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -405,4 +371,20 @@ h5 {
         margin-bottom:50px;
     }
 }
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
 
