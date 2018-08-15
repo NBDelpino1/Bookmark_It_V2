@@ -18,7 +18,7 @@ h5 {
 }
 
 .content-wrapper {
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom ease-out .75s;
     animation-fill-mode: backwards;
 }
 
